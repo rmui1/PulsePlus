@@ -1,0 +1,2 @@
+pakL  -- 2020-01-18 21:30
+- deploy simple flask app and p0 project onto droplet

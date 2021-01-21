@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <form action="/home" method="get">
+            <input type="submit" name="FruitForBlogs" value="FruitForBlogs">
+        </form>
+        <br>
+        Your Blogs:
+        <br>
+        <form action="/user-blog" method="post">
+            {% for item in collection %}
+                <!-- <input type="submit" name={{ item[1] }} value={{ item[0] }}> -->
+                <button name="blog" value="{{ item[0] }}" type="submit">{{ item[1] }}</button>
+                <br>
+            {% endfor %}
+        </form>
+    </body>
+</html>
