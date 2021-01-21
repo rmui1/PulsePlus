@@ -4,7 +4,7 @@ from database import Database
 from middleware import protected
 
 app = Flask(__name__)
-db = Database("fruit_for_blogs.db")
+db = Database("/var/www/legendary-bassoon/app/fruit_for_blogs.db")
 
 @app.route("/", methods=["GET", "POST"])
 @protected(signed_in=True, goto="/home")
@@ -70,11 +70,11 @@ def edit():
 @protected(signed_in=False, goto="/")
 def user_blog():
     info = db.get_blog(request.form["blog"])
-    return render_template("user_blog.html", 
-        blog_name=info["title"], 
-        update=info["time"], 
-        description=info["description"], 
-        blog_author=info["author"], 
+    return render_template("user_blog.html",
+        blog_name=info["title"],
+        update=info["time"],
+        description=info["description"],
+        blog_author=info["author"],
         collection=info["entries"],
         id=info["id"]
     )
@@ -83,11 +83,11 @@ def user_blog():
 @protected(signed_in=False, goto="/")
 def new_entry():
     info = db.get_blog(request.form["blog"])
-    return render_template("new_entry.html", 
-        blog_name=info["title"], 
-        update=info["time"], 
-        description=info["description"], 
-        blog_author=info["author"], 
+    return render_template("new_entry.html",
+        blog_name=info["title"],
+        update=info["time"],
+        description=info["description"],
+        blog_author=info["author"],
         collection=info["entries"],
         id=info["id"]
     )
@@ -98,10 +98,10 @@ def input_entry():
     db.insert_entry(request.form["body"], request.form["blog"])
     info = db.get_blog(request.form["blog"])
     return render_template("user_blog.html",
-        blog_name=info["title"], 
-        update=info["time"], 
-        description=info["description"], 
-        blog_author=info["author"], 
+        blog_name=info["title"],
+        update=info["time"],
+        description=info["description"],
+        blog_author=info["author"],
         collection=info["entries"],
         id=info["id"]
     )
@@ -123,11 +123,11 @@ def new_blog():
 def view_blog():
     info = db.get_blog(request.form["blog"])
     webpage = "other_blog.html"
-    return render_template(webpage, 
-        blog_name=info["title"], 
-        update=info["time"], 
-        description=info["description"], 
-        blog_author=info["author"], 
+    return render_template(webpage,
+        blog_name=info["title"],
+        update=info["time"],
+        description=info["description"],
+        blog_author=info["author"],
         collection=info["entries"],
         id=info["id"]
     )
@@ -137,11 +137,11 @@ def view_blog():
 def edit_blog():
     db.update_blog(request.form["blog"], request.form["title"], request.form["description"])
     info = db.get_blog(request.form["blog"])
-    return render_template("user_blog.html", 
-        blog_name=info["title"], 
-        update=info["time"], 
-        description=info["description"], 
-        blog_author=info["author"], 
+    return render_template("user_blog.html",
+        blog_name=info["title"],
+        update=info["time"],
+        description=info["description"],
+        blog_author=info["author"],
         collection=info["entries"],
         id=info["id"]
     )
@@ -151,11 +151,11 @@ def edit_blog():
 def edit_entry():
     db.update_entry(request.form["entryID"], request.form["body"])
     info = db.get_blog(request.form["blog"])
-    return render_template("user_blog.html", 
-        blog_name=info["title"], 
-        update=info["time"], 
-        description=info["description"], 
-        blog_author=info["author"], 
+    return render_template("user_blog.html",
+        blog_name=info["title"],
+        update=info["time"],
+        description=info["description"],
+        blog_author=info["author"],
         collection=info["entries"],
         id=info["id"]
     )
