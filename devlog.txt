@@ -4,3 +4,6 @@ pakL -- 2020-01-18 21:30
 - Deployed simple flask app and p0 project onto droplet
 	- Referred to instructions here: https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
 	- Followed Karl.SeniorMars's tips in #dev_discussion channel about the wsgi file and permissions changes
+		- chmod -R ugo+w app (changed all groups to have write permissions in the app folder and all files inside it)
+		- in app.wsgi added: `sys.path.append("/var/www/legendary-bassoon/app/")` after `sys.path.insert(0,"/var/www/legendary-bassoon/")`
+		- in __init__.py, when inputting the database path, `/var/www/legendary-bassoon/app/fruit_for_blogs.db` was used (absolute path) instead of `fruit_for_blogs.db` (relative path)
