@@ -1,2 +1,6 @@
-pakL  -- 2020-01-18 21:30
-- deploy simple flask app and p0 project onto droplet
+Team PulsePlus DevLog
+
+pakL -- 2020-01-18 21:30
+- Deployed simple flask app and p0 project onto droplet
+	- Referred to instructions here: https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+	- Followed Karl.SeniorMars's tips in #dev_discussion channel about the wsgi file and permissions changes
