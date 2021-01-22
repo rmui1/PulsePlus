@@ -16,5 +16,5 @@ victoriaG -- 2020-01-22 09:30
 
 reneeM -- 2020-01-22 15:29
     - Added text-center class to the div in login_or_register.html to center the buttons
-    - Adjusted database name in __init__.py to reflect team name
+    - Adjusted database name in __init__.py and .wsgi file to reflect team name
     - Updated .gitignore to ignore .DS_Store and .db files
