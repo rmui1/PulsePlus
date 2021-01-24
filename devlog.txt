@@ -23,3 +23,13 @@ reneeM -- 2020-01-24 13:40
     - Added Bootstrap to view_blogs.html and other_blog.html:
         - Created a header colored with a blue gradient
         - Organized different sections of the page into their own div
+        
+victoriaG -- 2020-01-24 15:34
+    - Increased the resolution of the background image of login_or_register.html with an image editor.
+    - Uploaded background images of login_or_register.html, register.html, and login.html into the static folder in team repo.
+    - Added Bootstrap to register.html and login.html:
+        - Organized input fields and text by grouping them inside <div> tags 
+        - Adjusted margin, padding, and col-<positive #> class values until the elements were centered and the edges of text
+        and input fields lined up
+        - Used a color scheme that makes text easy to read and corresponds to the colors of login and register buttons on login_or_register.html
+        
