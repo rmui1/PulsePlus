@@ -8,3 +8,15 @@
   - login_or_register.html
   - login.html
   - register.html
+
+### Remaining HTML files: (delete later)
+* blog.html
+* edit_blogs.html
+* home.html
+* new_blog.html
+* new_entry.html
+* other_blog.html
+* registration_successful.html
+* user.html
+* user_blog.html
+* view_blogs.html
