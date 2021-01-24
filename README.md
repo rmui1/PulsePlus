@@ -3,6 +3,7 @@
 ## Roster:
 * Project Manager: Renee Mui (rmui10)
   - other_blog.html
+  - view_blogs.html
 * Pak Lau (plau10)
 * Ryan Ma (rma10)
 * Victoria Gao (vgao10)
@@ -19,4 +20,3 @@
 * registration_successful.html
 * user.html
 * user_blog.html
-* view_blogs.html
