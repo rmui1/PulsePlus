@@ -5,6 +5,7 @@ from middleware import protected
 
 app = Flask(__name__)
 db = Database("/var/www/PulsePlus/app/fruit_for_blogs.db")
+#db = Database("./fruit_for_blogs.db") #Testing purposes only
 
 @app.route("/", methods=["GET", "POST"])
 @protected(signed_in=True, goto="/home")
@@ -163,7 +164,7 @@ def edit_entry():
 @app.route("/view-user", methods=["GET", "POST"])
 @protected(signed_in=False, goto="/")
 def view_user():
-    username = request.form["user"]
+    username = request.form["user"] + "'s"
     if(request.form["user"] == session["username"]):
         username = "Your"
     return render_template("view_blogs.html", user=username, collection=db.get_blogs(request.form["user"]))

@@ -10,11 +10,16 @@ pakL -- 2020-01-18 21:30
 
 victoriaG -- 2020-01-22 09:30
     - Added Bootstrap to login_or_register.html:
-   	- Added background image that covers the entire page without the image repeatedly displayed as tiles
-	- Grouped text and buttons inside <div> tags with different padding, margin, and col-<number> values to organize elements
-	- Adjusted font and background color of heading and login and register buttons to contrast with background.
+       	- Added background image that covers the entire page without the image repeatedly displayed as tiles
+    	- Grouped text and buttons inside <div> tags with different padding, margin, and col-<number> values to organize elements
+    	- Adjusted font and background color of heading and login and register buttons to contrast with background.
 
 reneeM -- 2020-01-22 15:29
     - Added text-center class to the div in login_or_register.html to center the buttons
     - Adjusted database name in __init__.py and .wsgi file to reflect team name
     - Updated .gitignore to ignore .DS_Store and .db files
+
+reneeM -- 2020-01-24 13:40
+    - Added Bootstrap to view_blogs.html and other_blog.html:
+        - Created a header colored with a blue gradient
+        - Organized different sections of the page into their own div
