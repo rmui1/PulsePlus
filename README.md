@@ -7,6 +7,9 @@
   - home.html
 * Pak Lau (plau10)
 * Ryan Ma (rma10)
+  - registration_successful.html
+  - user.html
+  - user_blog.html
 * Victoria Gao (vgao10)
   - login_or_register.html
   - login.html
@@ -17,6 +20,3 @@
 * edit_blogs.html
 * new_blog.html
 * new_entry.html
-* registration_successful.html
-* user.html
-* user_blog.html
