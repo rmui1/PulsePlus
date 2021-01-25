@@ -23,22 +23,26 @@ reneeM -- 2020-01-24 13:40
     - Added Bootstrap to view_blogs.html and other_blog.html:
         - Created a header colored with a blue gradient
         - Organized different sections of the page into their own div
-        
+
 victoriaG -- 2020-01-24 15:34
     - Increased the resolution of the background image of login_or_register.html with an image editor.
     - Uploaded background images of login_or_register.html, register.html, and login.html into the static folder in team repo.
     - Added Bootstrap to register.html and login.html:
-        - Organized input fields and text by grouping them inside <div> tags 
+        - Organized input fields and text by grouping them inside <div> tags
         - Adjusted margin, padding, and col-<positive #> class values until the elements were centered and the edges of text
         and input fields lined up
         - Used a color scheme that makes text easy to read and corresponds to the colors of login and register buttons on login_or_register.html
-        
+
 victoriaG -- 2020-01-25 00:08
     - Fixed "Bad Request: The browser (or proxy) sent a request that this server could not understand" error that was rendered on register.html
-    and login.html after the user clicked a button to submit info.  This problem was solved by adding a name attribute inside <input> tags 
+    and login.html after the user clicked a button to submit info.  This problem was solved by adding a name attribute inside <input> tags
     with the same value as key in request.form[<key>] commands in __init__.py
-    
+
 victoriaG -- 2020-01-25 10:22
-    - Display error on login.html when users type incorrect username/password in bold red text, centered, at the top of the page, 
-    and highlighted with a white bacgkround that contrasts with green background image covering the entire page.
-        
+    - Displayed error on login.html when users type incorrect username/password in bold red text, centered, at the top of the page,
+    and highlighted with a white background that contrasts with green background image covering the entire page.
+
+reneeM -- 2020-01-25 13:27
+    - Added Bootstrap to home.html
+    - Removed unnecessary CSS from view_blogs.html and other_blog.html
+    - Adjusted header in view_blogs.html and other_blog.html to include a log out button on the right
