@@ -39,5 +39,6 @@ victoriaG -- 2020-01-25 00:08
     with the same value as key in request.form[<key>] commands in __init__.py
     
 victoriaG -- 2020-01-25 10:22
-    - Display error on login.html when users type incorrect username/password in bold red text, centered, at the top of the page, and highlighted with a white bacgkround that contrasts with green background image covering the entire page.
+    - Display error on login.html when users type incorrect username/password in bold red text, centered, at the top of the page, 
+    and highlighted with a white bacgkround that contrasts with green background image covering the entire page.
         
