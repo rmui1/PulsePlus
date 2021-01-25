@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--Bootstrap Files-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
@@ -14,9 +14,11 @@
             }
 
             .container-fluid {
+              position: absolute;
               background-image: url("static/register-background.jpg");
             
-              /* Full height */
+              /* Full width and height */
+              width: 100%;
               height: 100%; 
             
               /* Center and scale the image nicely */
@@ -26,7 +28,7 @@
             }
 
             .custom_mt {
-                margin-top: 35px;
+                margin-top: 5px;
             }
 
             .gold {
@@ -55,13 +57,22 @@
                 color:rgb(225, 248, 12);
                 background-color: #3c4ab4;
             }
+
+            .txt-gray {
+                color: rgb(68, 65, 65);
+            }
         </style>
     </head>
     <body>
         <div class="container-fluid">
             <div class="row justify-content-center">
+                <div class="col-12">
+                    <p class="text-danger fw-bold text-center mt-1 bg-white"> {{ error }} </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
                 <div class="col-7">
-                    <div class="gold custom_mt p-2 text-dark text-center fs-2">Create Your Account</div>
+                    <div class="gold custom_mt pb-2 text-center fs-4 text-dark fw-bold">Create Your Account</div>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -70,41 +81,41 @@
                         <form action="/register" method="post">
                             <div class="form-group row align-items-center">
                                 <label class="col-3"></label>
-                                <label class="col-2 col-form-label fs-5 fw-bold" for="InputUsername1">Username:</label>
+                                <label class="col-2 col-form-label fs-7 txt-gray fw-bold">Username:</label>
                                 <div class="col-5">
-                                    <input type="text" class="form-control" id="InputUsername1" placeholder="Enter username">
+                                    <input type="text" class="form-control" name="register_username" placeholder="Enter username">
                                 </div>
                             </div>
                             
                             <div class="form-group row align-items-center">
                                 <label class="col-3"></label>
-                                <label class="p-3 col-2 col-form-label fs-5 fw-bold" for="InputPassword1">Password: </label>
+                                <label class="p-3 col-2 col-form-label fs-7 fw-bold txt-gray">Password: </label>
                                 <div class="col-5">
-                                    <input type="password" class="form-control" id="InputPassword1" placeholder="Enter password">
+                                    <input type="password" class="form-control" name="register_password" placeholder="Enter password">
                                 </div>
                             </div>
                             
                             <div class="form-group row align-items-center">
                                 <label class="col-2"></label>
-                                <label class="col-3 col-form-label fs-5 fw-normal confirmPass fw-bold" for="ConfirmPassword1">Confirm Password: </label>
+                                <label class="col-3 col-form-label fs-7 fw-normal confirmPass fw-bold txt-gray">Confirm Password: </label>
                                 <div class="col-5">
-                                    <input type="password" class="form-control" id="ConfirmPassword1" placeholder="Re-enter Password">
+                                    <input type="password" class="form-control" name="confirm" placeholder="Re-enter Password">
                                 </div>
                             </div>
 
                             <div class="form-group row align-items-center">
                                 <label class="col-3"></label>
-                                <label class="pt-3 col-form-label fs-5 fw-bold blog" for="BlogName1">Blog Name: </label>
+                                <label class="pt-3 col-form-label fs-7 fw-bold blog">Blog Name: </label>
                             </div>
                             <div class="form-group row col-7">
-                                <input type="password" class="form-control blog-field" id="BlogName1" placeholder="Enter Blog Name">
+                                <input type="text" class="form-control blog-field" name="blog_name" placeholder="Enter Blog Name">
                             </div>
                             
                             <div class="form-group">
-                                <label for="Description1" class="blog fs-5 fw-bold pt-3">Blog Description</label>
+                                <label class="blog fs-7 fw-bold pt-1">Blog Description: </label>
                             </div>
                             <div class="form-group row col-7">
-                                <textarea class="form-control blog-field" id="Description1" rows="5"></textarea>
+                                <textarea class="form-control blog-field" name="description" rows="5"></textarea>
                             </div>
                             <div class="pb-3">
                                 <input type="submit" class="col-3 mt-3 btn fw-bold btn-blue d-md-block mx-auto" name="register" value="Register">
