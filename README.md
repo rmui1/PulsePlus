@@ -30,3 +30,5 @@
 `pip install -r requirements.txt`
 4. Run app.py:
 `python app/__init__.py`
+
+OR visit http://165.22.185.142 
