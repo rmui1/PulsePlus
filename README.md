@@ -20,3 +20,13 @@
 * edit_blogs.html
 * new_blog.html
 * new_entry.html
+
+## Launch codes
+1. Clone this repository: 
+`git clone https://github.com/rmui10/PulsePlus.git`
+2. Go to the folder containing the app:
+`cd PulsePlus`
+3. Install the required modules:
+`pip install -r requirements.txt`
+4. Run app.py:
+`python app/__init__.py`
