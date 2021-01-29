@@ -14,116 +14,141 @@
             }
 
             .container-fluid {
-              position: absolute;
-              background-image: url("static/register-background.jpg");
+                margin-top: 0%;
+                position: absolute;
+                background-image: url("https://i.pinimg.com/originals/be/2a/94/be2a940c4ac312bf5abc0aa9677749de.jpg");
+                
+                /* Full width and height */
+                min-height: 100%;
+                min-width: 100%;
+                /* Center and scale the image nicely */
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
             
-              /* Full width and height */
-              width: 100%;
-              height: 100%; 
-            
-              /* Center and scale the image nicely */
-              background-position: center;
-              background-repeat: no-repeat;
-              background-size: cover;
-            }
-
-            .custom_mt {
-                margin-top: 5px;
-            }
-
-            .gold {
-                background-color:#edc43b;
-            }
-
             .confirmPass {
                 white-space: nowrap;
             }
             .blog {
                 color: #07168a;
-                white-space: nowrap;
-                margin-left: 185px;
+                margin-left: 34%;
             }
 
             .blog-field {
-                margin-left: 195px;
+                width: 31.5%;
+                margin-left: 34%;
+                margin-bottom: 1%;
+                resize: none;
             }
             
-            .btn-blue{
-                background-color: #07168a;
-                color:#edc43b;
+            .btn-green{
+                background-color:#148505;
+                color: white;
+                box-sizing: content-box;
+                min-width: 65px;
+                text-align: center;
+                margin: 0;
+                position: absolute;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                width: 10%
             }
 
-            .btn-blue:hover{
-                color:rgb(225, 248, 12);
-                background-color: #3c4ab4;
+            .btn-green:hover{
+                color:black;
+                background-color:rgb(12, 248, 12);
             }
 
             .txt-gray {
                 color: rgb(68, 65, 65);
             }
+
+            .custom_ml {
+                margin-left: 35%;
+            }
+
+            .field {
+                width: 30%;
+            }
+
+            .username {
+                margin-left: 5%;
+                margin-bottom: 1.5%;
+            }
+
+            .password{
+                margin-left: 5.5%;
+                margin-bottom: 1.5%;
+            }
+
+            .gold {
+                background-color:rgba(248, 244, 26, 0.952);
+            }
+
+            .confirm_m {
+                margin-left: 29%;
+                margin-bottom: 1.5%;
+            }
+
+            .confirm_pass {
+                margin-left: 4%;
+                width: 27.5%
+            }
+
+            
         </style>
     </head>
     <body>
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-12">
-                    <p class="text-danger fw-bold text-center mt-1 bg-white"> {{ error }} </p>
+                    <p class="text-danger fw-bold text-center mt-1 gold"> {{ error }} </p>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-7">
-                    <div class="gold custom_mt pb-2 text-center fs-4 text-dark fw-bold">Create Your Account</div>
-                </div>
+                <div class="text-dark text-center fs-3 fw-bold mb-2">Create Your Account</div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-7">
-                    <div class="gold">
-                        <form action="/register" method="post">
-                            <div class="form-group row align-items-center">
-                                <label class="col-3"></label>
-                                <label class="col-2 col-form-label fs-7 txt-gray fw-bold">Username:</label>
-                                <div class="col-5">
-                                    <input type="text" class="form-control" name="register_username" placeholder="Enter username">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row align-items-center">
-                                <label class="col-3"></label>
-                                <label class="p-3 col-2 col-form-label fs-7 fw-bold txt-gray">Password: </label>
-                                <div class="col-5">
-                                    <input type="password" class="form-control" name="register_password" placeholder="Enter password">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group row align-items-center">
-                                <label class="col-2"></label>
-                                <label class="col-3 col-form-label fs-7 fw-normal confirmPass fw-bold txt-gray">Confirm Password: </label>
-                                <div class="col-5">
-                                    <input type="password" class="form-control" name="confirm" placeholder="Re-enter Password">
-                                </div>
-                            </div>
-
-                            <div class="form-group row align-items-center">
-                                <label class="col-3"></label>
-                                <label class="pt-3 col-form-label fs-7 fw-bold blog">Blog Name: </label>
-                            </div>
-                            <div class="form-group row col-7">
-                                <input type="text" class="form-control blog-field" name="blog_name" placeholder="Enter Blog Name">
-                            </div>
-                            
-                            <div class="form-group">
-                                <label class="blog fs-7 fw-bold pt-1">Blog Description: </label>
-                            </div>
-                            <div class="form-group row col-7">
-                                <textarea class="form-control blog-field" name="description" rows="5"></textarea>
-                            </div>
-                            <div class="pb-3">
-                                <input type="submit" class="col-3 mt-3 btn fw-bold btn-blue d-md-block mx-auto" name="register" value="Register">
-                            </div>
-                        </form>
+                <form action="/register" method="post">
+                    <div class="form-group row custom_ml fs-5 fw-bold">
+                        Username:
+                        <input type="text" class="form-control field username" name="register_username">
                     </div>
-                </div>
+
+                    <div class="form-group row custom_ml fs-5 fw-bold">
+                        Password:
+                        <input type="password" class="form-control field password" name="register_password">
+                    </div>
+
+                    <div class="form-group row confirm_m fs-5 fw-bold">
+                        Confirm Password:
+                        <input type="password" class="form-control confirm_pass" name="confirm">
+                    </div>
+                    
+                    <div class="form-group row blog fs-5 fw-bold">
+                        Blog Name:
+                    </div>
+                    <div class="form-group row blog-field fs-5 fw-bold">
+                        <input type="text" class="form-control" name="blog_name">
+                    </div>
+
+                    <div class="form-group row blog fs-5 fw-bold">
+                        Blog Description:
+                    </div>
+                    <div class="form-group row fs-5 fw-bold">
+                        <textarea class="form-control blog-field" name="description" rows="5"></textarea>
+                    </div>
+                    <div class="form-group row">
+                        <input type="submit" class="mt-3 btn fw-bold btn-green btn_margin_width" name="register" value="Register">
+                    </div>
+                </form>
             </div>
-        </div>
+            
+                            
+                            
+                            
+                            
     </body>
 </html>
