@@ -46,3 +46,10 @@ reneeM -- 2020-01-25 13:27
     - Added Bootstrap to home.html
     - Removed unnecessary CSS from view_blogs.html and other_blog.html
     - Adjusted header in view_blogs.html and other_blog.html to include a log out button on the right
+
+victoriaG -- 2020-01-29 16:35
+    - Adjusted margin, padding, and width values to prevent the HTML form's input fields from covering text when the user 
+    decreases the size of the register.html page. 
+    - Set the value of the background-attachment attribute to fixed, min-width to 100%, and min-height to 100% 
+    so that the background image covers the entire page when the user zooms in/out or scrolls down the page.
+    - Changed background image and button and text colors of register.html to fit the website's color scheme of blue, green, and white.
