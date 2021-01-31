@@ -10,7 +10,6 @@
   - made P0 servable from a droplet
 * Ryan Ma (rma10)
   - user.html 
-  - user_blog.html
 * Victoria Gao (vgao10)
   - Added bootstrap to the following HTML files: 
     - login_or_register.html
@@ -20,6 +19,7 @@
     - edit_blogs.html
     - new_entry.html
     - new_blog.html
+    - user_blog.html
 
 ### Remaining HTML files: (delete later)
 * blog.html
