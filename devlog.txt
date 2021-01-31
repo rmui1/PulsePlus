@@ -53,3 +53,12 @@ victoriaG -- 2020-01-29 16:35
     - Set the value of the background-attachment attribute to fixed, min-width to 100%, and min-height to 100% 
     so that the background image covers the entire page when the user zooms in/out or scrolls down the page.
     - Changed background image and button and text colors of register.html to fit the website's color scheme of blue, green, and white.
+
+victoriaG -- 2021-01-31 17:33
+    - Added bootstrap to registration_successful.html, new_entry.html, new_blog.html, edit_blogs.html, and user_blog.html
+    - Updated boostrap in home.html, otherblog.html, view_blogs.html:
+      - Changed color and increased size of buttons while maintaining organized layout of webpage. 
+      - Added a background image below blue gradient header and adjusted text color and size so that text are easier to read.
+      - Added horizontal lines to separate sections of a blog; the sections include the blog name & description, entries, and button(s). 
+    - Uploaded background images to the static folder of the team repository.
+    
