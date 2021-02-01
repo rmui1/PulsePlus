@@ -9,6 +9,7 @@
 * Pak Lau (plau10)
   - made P0 servable from a droplet
 * Ryan Ma (rma10)
+  - designed new site
 * Victoria Gao (vgao10)
   - Added bootstrap to the following HTML files:
     - login_or_register.html
