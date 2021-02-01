@@ -1,4 +1,4 @@
-# PulsePlus
+# P1: Going Public by PulsePlus
 
 ## Roster:
 * Project Manager: Renee Mui (rmui10)
