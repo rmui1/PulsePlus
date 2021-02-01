@@ -2,24 +2,13 @@
 
 ## Roster:
 * Project Manager: Renee Mui (rmui10)
-  - Added bootstrap to the following HTML files:
-    - other_blog.html
-    - view_blogs.html
-    - home.html
+  - Added Bootstrap to HTML files
 * Pak Lau (plau10)
-  - made P0 servable from a droplet
+  - Made P0 servable from a droplet
 * Ryan Ma (rma10)
-  - designed new site
+  - Designed new site
 * Victoria Gao (vgao10)
-  - Added bootstrap to the following HTML files:
-    - login_or_register.html
-    - login.html
-    - register.html
-    - registration_successful.html
-    - edit_blogs.html
-    - new_entry.html
-    - new_blog.html
-    - user_blog.html
+  - Added Bootstrap to HTML files
 
 ## Launch codes
 1. Clone this repository:
