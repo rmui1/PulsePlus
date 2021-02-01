@@ -48,17 +48,19 @@ reneeM -- 2020-01-25 13:27
     - Adjusted header in view_blogs.html and other_blog.html to include a log out button on the right
 
 victoriaG -- 2020-01-29 16:35
-    - Adjusted margin, padding, and width values to prevent the HTML form's input fields from covering text when the user 
-    decreases the size of the register.html page. 
-    - Set the value of the background-attachment attribute to fixed, min-width to 100%, and min-height to 100% 
+    - Adjusted margin, padding, and width values to prevent the HTML form's input fields from covering text when the user
+    decreases the size of the register.html page.
+    - Set the value of the background-attachment attribute to fixed, min-width to 100%, and min-height to 100%
     so that the background image covers the entire page when the user zooms in/out or scrolls down the page.
     - Changed background image and button and text colors of register.html to fit the website's color scheme of blue, green, and white.
 
 victoriaG -- 2021-01-31 17:33
     - Added bootstrap to registration_successful.html, new_entry.html, new_blog.html, edit_blogs.html, and user_blog.html
     - Updated boostrap in home.html, otherblog.html, view_blogs.html:
-      - Changed color and increased size of buttons while maintaining organized layout of webpage. 
+      - Changed color and increased size of buttons while maintaining organized layout of webpage.
       - Added a background image below blue gradient header and adjusted text color and size so that text are easier to read.
-      - Added horizontal lines to separate sections of a blog; the sections include the blog name & description, entries, and button(s). 
+      - Added horizontal lines to separate sections of a blog; the sections include the blog name & description, entries, and button(s).
     - Uploaded background images to the static folder of the team repository.
-    
+
+reneeM -- 2020-02-01 10:02
+    - Delete unused user.html and blog.html
