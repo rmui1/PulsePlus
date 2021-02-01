@@ -4,8 +4,8 @@ from database import Database
 from middleware import protected
 
 app = Flask(__name__)
-db = Database("/var/www/PulsePlus/app/fruit_for_blogs.db")
-#db = Database("./fruit_for_blogs.db") #Testing purposes only
+#db = Database("/var/www/PulsePlus/app/fruit_for_blogs.db")
+db = Database("./fruit_for_blogs.db") #Testing purposes only
 
 @app.route("/", methods=["GET", "POST"])
 @protected(signed_in=True, goto="/home")
