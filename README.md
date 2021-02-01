@@ -9,6 +9,9 @@
   - Designed new site
 * Victoria Gao (vgao10)
   - Added Bootstrap to HTML files
+  
+## Project Description
+This project builds off of Purple Snake's P0 project, which was a website where users could make their own blogs and update them with entries. In this new version, we added Bootstrap to the HTML pages, giving them backgrounds, organizing different sections of the page, etc.
 
 ## Launch codes
 1. Clone this repository:
