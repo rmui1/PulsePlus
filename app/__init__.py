@@ -1,7 +1,12 @@
 from flask import Flask, render_template, request, session
 import os
-from database import Database
-from middleware import protected
+
+try:
+    from database import Database
+    from middleware import protected
+except ImportError:
+    from .database import Database
+    from .middleware import protected
 
 app = Flask(__name__)
 DIR = os.path.dirname(__file__) or '.'
