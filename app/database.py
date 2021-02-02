@@ -1,7 +1,7 @@
 import sqlite3
 from datetime import datetime
 
-from .constants import *
+from constants import *
 
 class DbInstance:
 
