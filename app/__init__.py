@@ -50,6 +50,7 @@ def login():
         elif(not(db.check_credentials(username, password))):
             return render_template("login.html", error="Wrong credentials!")
         else:
+            session.permanent = True
             session["username"] = username
             session["password"] = password
     if("username" in session and "password" in session and db.check_credentials(session["username"], session["password"])):
