@@ -9,6 +9,7 @@ except ImportError:
     from .middleware import protected
 
 app = Flask(__name__)
+app.secret_key = os.urandom(32)
 DIR = os.path.dirname(__file__) or '.'
 DIR += '/fruit_for_blogs.db'
 db = Database(DIR)
@@ -176,6 +177,5 @@ def view_user():
     return render_template("view_blogs.html", user=username, collection=db.get_blogs(request.form["user"]))
 
 if(__name__ == "__main__"):
-    app.secret_key = os.urandom(32)
     app.debug = False
     app.run()
